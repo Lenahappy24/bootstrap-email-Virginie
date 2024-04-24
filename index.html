@@ -64,7 +64,7 @@
     <section class="container-fluid">
       <div class="d-flex align-items-between">
         <!-- part one -->
-        <div class="col-md-4 d-none d-md-block">
+        <div class="col-6 col-md-4 col-lg-3">
           <button type="button" class="btn btn-primary btn-block">
             Inbox 99+
           </button>
@@ -82,7 +82,8 @@
           <button type="button" class="btn btn-primary btn-block">Trash</button>
         </div>
         <!-- part two -->
-        <div class="col-md-4 d-none d-md-block">
+        <!-- class="col-4 d-md-block" -->
+        <div class="col-6 col-md-4 col-lg-3">
           <form>
             <div class="form-group">
               <div>
@@ -119,40 +120,92 @@
           </form>
         </div>
         <!-- part three -->
-        <div class="col-12 col-md-4">
-            <div class="spinner-grow" role="status">
-                <span class="sr-only">Loading...</span>
+        <div class="d-none d-md-block col-md-4 col-lg-3">
+          <form>
+            <div class="form-group">
+              <div>
+                <button type="button" class="btn btn-primary">
+                  Received Email:
+                </button>
               </div>
-              <button id="button-new-email" class="btn btn-primary  btn-lg">New email</button>
-            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-header">Elvia Ak</div>
-                <div class="card-body">
-                  <h5 class="card-title">Happy Birthday</h5>
-                  <p class="card-text">congratulations! Happy Birthday!</p>
-                </div>
-              </div>
-              <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-header">Lydia Brava</div>
-                <div class="card-body">
-                  <h5 class="card-title">Arts Workshop</h5>
-                  <p class="card-text">My name is Lydia Brava, I am very lucky to be an accomplished Artist...</p>
-                </div>
-              </div>
-              <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-header">Conto Airline</div>
-                <div class="card-body">
-                  <h5 class="card-title">Your flight reservation is confirmed</h5>
-                  <p class="card-text">Hi Tim, your flight to Seattle is comfirm...</p>
-                </div>
-              </div>
-              <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-header">The Grand Hotel</div>
-                <div class="card-body">
-                  <h5 class="card-title">Comfirmation letter</h5>
-                  <p class="card-text">Thank you for booking your...</p>
-                </div>
-              </div>
-              
+              <label for="exampleFormControlInput1">From:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                value="Elvia Ak"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Subject:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                value="Happy Birthday"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Date:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                value="Mar 23, 2024"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Content:</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              >
+Happy Birthday congratulations!</textarea
+              >
+            </div>
+          </form>
+        </div>
+        <!-- part four -->
+        <div class="d-none d-lg-block col-lg-3">
+          <div class="spinner-grow" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <button id="button-new-email" class="btn btn-primary btn-lg">
+            New email
+          </button>
+          <div class="card text-white bg-primary mb-3" style="max-width: 18rem">
+            <div class="card-header">Elvia Ak</div>
+            <div class="card-body">
+              <h5 class="card-title">Happy Birthday</h5>
+              <p class="card-text">congratulations!...</p>
+            </div>
+          </div>
+          <div class="card text-white bg-primary mb-3" style="max-width: 18rem">
+            <div class="card-header">Lydia Brava</div>
+            <div class="card-body">
+              <h5 class="card-title">Arts Workshop</h5>
+              <p class="card-text">
+                My name is Lydia Brava, I am very lucky to be an accomplished...
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-primary mb-3" style="max-width: 18rem">
+            <div class="card-header">Conto Airline</div>
+            <div class="card-body">
+              <h5 class="card-title">Your flight reservation is confirmed</h5>
+              <p class="card-text">
+                Hi Tim, your flight to Seattle is comfirmed...
+              </p>
+            </div>
+          </div>
+          <div class="card text-white bg-primary mb-3" style="max-width: 18rem">
+            <div class="card-header">The Grand Hotel</div>
+            <div class="card-body">
+              <h5 class="card-title">Comfirmation letter</h5>
+              <p class="card-text">Thank you for booking your...</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
